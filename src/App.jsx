@@ -1,5 +1,9 @@
+import Header from "./components/Header";
+
 const app = () => {
-  return ( <div>Football Cards Store</div> );
+  return ( <>
+   <Header />
+  </> );
 }
  
 export default app;
