@@ -1,0 +1,61 @@
+{ "players": [
+  {"id":1,"name":"Diego Maradona","position":"Midfielder","team":"Argentina","flag":"https://flagcdn.com/ar.svg","overall":94,"price":299.99,"quantity":5,"decade":"1980s"},
+  {"id":2,"name":"Johan Cruyff","position":"Forward","team":"Netherlands","flag":"https://flagcdn.com/nl.svg","overall":93,"price":289.99,"quantity":4,"decade":"1980s"},
+  {"id":3,"name":"Michel Platini","position":"Midfielder","team":"France","flag":"https://flagcdn.com/fr.svg","overall":92,"price":279.99,"quantity":6,"decade":"1980s"},
+  {"id":4,"name":"Franz Beckenbauer","position":"Defender","team":"Germany","flag":"https://flagcdn.com/de.svg","overall":91,"price":269.99,"quantity":5,"decade":"1980s"},
+  {"id":5,"name":"Paolo Rossi","position":"Forward","team":"Italy","flag":"https://flagcdn.com/it.svg","overall":90,"price":259.99,"quantity":7,"decade":"1980s"},
+  
+  {"id":6,"name":"Zinedine Zidane","position":"Midfielder","team":"France","flag":"https://flagcdn.com/fr.svg","overall":94,"price":299.99,"quantity":6,"decade":"1990s"},
+  {"id":7,"name":"George Weah","position":"Forward","team":"Liberia","flag":"https://flagcdn.com/lr.svg","overall":92,"price":289.99,"quantity":5,"decade":"1990s"},
+  {"id":8,"name":"Roberto Baggio","position":"Forward","team":"Italy","flag":"https://flagcdn.com/it.svg","overall":91,"price":279.99,"quantity":6,"decade":"1990s"},
+  {"id":9,"name":"Gabriel Batistuta","position":"Forward","team":"Argentina","flag":"https://flagcdn.com/ar.svg","overall":90,"price":269.99,"quantity":5,"decade":"1990s"},
+  {"id":10,"name":"Paolo Maldini","position":"Defender","team":"Italy","flag":"https://flagcdn.com/it.svg","overall":93,"price":299.99,"quantity":4,"decade":"1990s"},
+  
+  {"id":11,"name":"Ronaldinho","position":"Midfielder","team":"Brazil","flag":"https://flagcdn.com/br.svg","overall":90,"price":279.99,"quantity":7,"decade":"2000s"},
+  {"id":12,"name":"Cristiano Ronaldo","position":"Forward","team":"Portugal","flag":"https://flagcdn.com/pt.svg","overall":85,"price":199.99,"quantity":10,"decade":"2000s"},
+  {"id":13,"name":"Thierry Henry","position":"Forward","team":"France","flag":"https://flagcdn.com/fr.svg","overall":89,"price":209.99,"quantity":9,"decade":"2000s"},
+  {"id":14,"name":"Kaka","position":"Midfielder","team":"Brazil","flag":"https://flagcdn.com/br.svg","overall":88,"price":199.99,"quantity":8,"decade":"2000s"},
+  {"id":15,"name":"Iker Casillas","position":"Goalkeeper","team":"Spain","flag":"https://flagcdn.com/es.svg","overall":89,"price":189.99,"quantity":12,"decade":"2000s"},
+  
+  {"id":16,"name":"Lionel Messi","position":"Forward","team":"Argentina","flag":"https://flagcdn.com/ar.svg","overall":91,"price":199.99,"quantity":10,"decade":"2010s"},
+  {"id":17,"name":"Cristiano Ronaldo","position":"Forward","team":"Portugal","flag":"https://flagcdn.com/pt.svg","overall":91,"price":199.99,"quantity":10,"decade":"2010s"},
+  {"id":18,"name":"Neymar Jr","position":"Forward","team":"Brazil","flag":"https://flagcdn.com/br.svg","overall":88,"price":189.99,"quantity":12,"decade":"2010s"},
+  {"id":19,"name":"Luka Modric","position":"Midfielder","team":"Croatia","flag":"https://flagcdn.com/hr.svg","overall":87,"price":179.99,"quantity":10,"decade":"2010s"},
+  {"id":20,"name":"Manuel Neuer","position":"Goalkeeper","team":"Germany","flag":"https://flagcdn.com/de.svg","overall":90,"price":199.99,"quantity":11,"decade":"2010s"},
+  
+  {"id":21,"name":"Kylian Mbappé","position":"Forward","team":"France","flag":"https://flagcdn.com/fr.svg","overall":91,"price":209.99,"quantity":12,"decade":"2020s"},
+  {"id":22,"name":"Erling Haaland","position":"Forward","team":"Norway","flag":"https://flagcdn.com/no.svg","overall":89,"price":199.99,"quantity":10,"decade":"2020s"},
+  {"id":23,"name":"Vinícius Júnior","position":"Forward","team":"Brazil","flag":"https://flagcdn.com/br.svg","overall":87,"price":179.99,"quantity":10,"decade":"2020s"},
+  {"id":24,"name":"Phil Foden","position":"Midfielder","team":"England","flag":"https://flagcdn.com/gb.svg","overall":85,"price":159.99,"quantity":9,"decade":"2020s"},
+  {"id":25,"name":"Alisson Becker","position":"Goalkeeper","team":"Brazil","flag":"https://flagcdn.com/br.svg","overall":88,"price":189.99,"quantity":11,"decade":"2020s"},
+  
+  {"id":26,"name":"George Best","position":"Forward","team":"Northern Ireland","flag":"https://flagcdn.com/gb-nir.svg","overall":92,"price":249.99,"quantity":5,"decade":"1960s"},
+  {"id":27,"name":"Bobby Charlton","position":"Midfielder","team":"England","flag":"https://flagcdn.com/gb.svg","overall":91,"price":239.99,"quantity":6,"decade":"1960s"},
+  {"id":28,"name":"Franz Beckenbauer","position":"Defender","team":"Germany","flag":"https://flagcdn.com/de.svg","overall":93,"price":249.99,"quantity":5,"decade":"1970s"},
+  {"id":29,"name":"Gerd Müller","position":"Forward","team":"Germany","flag":"https://flagcdn.com/de.svg","overall":92,"price":239.99,"quantity":4,"decade":"1970s"},
+  {"id":30,"name":"Michel Platini","position":"Midfielder","team":"France","flag":"https://flagcdn.com/fr.svg","overall":92,"price":239.99,"quantity":6,"decade":"1980s"},
+  
+  {"id":31,"name":"Paolo Maldini","position":"Defender","team":"Italy","flag":"https://flagcdn.com/it.svg","overall":93,"price":249.99,"quantity":5,"decade":"1990s"},
+  {"id":32,"name":"Ronaldo Nazário","position":"Forward","team":"Brazil","flag":"https://flagcdn.com/br.svg","overall":91,"price":219.99,"quantity":7,"decade":"1990s"},
+  {"id":33,"name":"David Beckham","position":"Midfielder","team":"England","flag":"https://flagcdn.com/gb.svg","overall":88,"price":199.99,"quantity":8,"decade":"2000s"},
+  {"id":34,"name":"Wayne Rooney","position":"Forward","team":"England","flag":"https://flagcdn.com/gb.svg","overall":87,"price":189.99,"quantity":9,"decade":"2000s"},
+  {"id":35,"name":"Andres Iniesta","position":"Midfielder","team":"Spain","flag":"https://flagcdn.com/es.svg","overall":90,"price":199.99,"quantity":7,"decade":"2010s"},
+  
+  {"id":36,"name":"Sergio Ramos","position":"Defender","team":"Spain","flag":"https://flagcdn.com/es.svg","overall":89,"price":189.99,"quantity":8,"decade":"2010s"},
+  {"id":37,"name":"Robert Lewandowski","position":"Forward","team":"Poland","flag":"https://flagcdn.com/pl.svg","overall":91,"price":209.99,"quantity":10,"decade":"2020s"},
+  {"id":38,"name":"Trent Alexander-Arnold","position":"Defender","team":"England","flag":"https://flagcdn.com/gb.svg","overall":87,"price":179.99,"quantity":9,"decade":"2020s"},
+  {"id":39,"name":"Mohamed Salah","position":"Forward","team":"Egypt","flag":"https://flagcdn.com/eg.svg","overall":90,"price":199.99,"quantity":11,"decade":"2020s"},
+  {"id":40,"name":"Leroy Sané","position":"Midfielder","team":"Germany","flag":"https://flagcdn.com/de.svg","overall":86,"price":179.99,"quantity":8,"decade":"2020s"},
+  
+  {"id":41,"name":"Johan Cruyff","position":"Forward","team":"Netherlands","flag":"https://flagcdn.com/nl.svg","overall":93,"price":249.99,"quantity":5,"decade":"1970s"},
+  {"id":42,"name":"Ruud Gullit","position":"Midfielder","team":"Netherlands","flag":"https://flagcdn.com/nl.svg","overall":92,"price":239.99,"quantity":5,"decade":"1980s"},
+  {"id":43,"name":"Marco van Basten","position":"Forward","team":"Netherlands","flag":"https://flagcdn.com/nl.svg","overall":91,"price":229.99,"quantity":6,"decade":"1980s"},
+  {"id":44,"name":"Roberto Carlos","position":"Defender","team":"Brazil","flag":"https://flagcdn.com/br.svg","overall":91,"price":229.99,"quantity":7,"decade":"1990s"},
+  {"id":45,"name":"Rivaldo","position":"Midfielder","team":"Brazil","flag":"https://flagcdn.com/br.svg","overall":90,"price":219.99,"quantity":6,"decade":"1990s"},
+  
+  {"id":46,"name":"Luis Figo","position":"Midfielder","team":"Portugal","flag":"https://flagcdn.com/pt.svg","overall":89,"price":209.99,"quantity":5,"decade":"2000s"},
+  {"id":47,"name":"Xavi Hernandez","position":"Midfielder","team":"Spain","flag":"https://flagcdn.com/es.svg","overall":91,"price":219.99,"quantity":6,"decade":"2010s"},
+  {"id":48,"name":"Sadio Mané","position":"Forward","team":"Senegal","flag":"https://flagcdn.com/sn.svg","overall":88,"price":189.99,"quantity":9,"decade":"2020s"},
+  {"id":49,"name":"Kevin De Bruyne","position":"Midfielder","team":"Belgium","flag":"https://flagcdn.com/be.svg","overall":91,"price":199.99,"quantity":10,"decade":"2020s"},
+  {"id":50,"name":"Harry Kane","position":"Forward","team":"England","flag":"https://flagcdn.com/gb.svg","overall":88,"price":189.99,"quantity":8,"decade":"2020s"}
+] }
