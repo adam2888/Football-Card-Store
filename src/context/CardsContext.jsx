@@ -7,6 +7,12 @@ export function CardsProvider({children}){
   const [cards,setCards] = useState([])
   const [loading,setLoading] = useState(true)
   const [error,setError] = useState(null)
+  const [filteredCards, setFilteredCards] = useState([]);
+  const [positionFilter, setPositionFilter] = useState("All");
+  const [nationalityFilter, setNationalityFilter] = useState("All");
+  const [sortBy, setSortBy] = useState(null);
+  const [sortOrder,setSortOrder] = useState("asc")
+
 
 
   useEffect(() => {
@@ -26,6 +32,40 @@ export function CardsProvider({children}){
     }
     fetchCards()
   },[])
+
+  useEffect(() => {
+    console.log("updated")
+    if(!cards.players) return;
+    let updated = cards.players.filter(player => (
+      (positionFilter === "All" || player.position === positionFilter) &&
+      (nationalityFilter === "All" || player.team === nationalityFilter)
+    ))
+
+    if(sortBy){
+     if(sortOrder === "asc") {
+       updated = [...updated].sort((a,b) => a[sortBy] - b[sortBy])
+     } else if (sortOrder === "desc") {
+       updated = [...updated].sort((a,b) => b[sortBy] - a[sortBy])
+     }
+    
+    }
+    setFilteredCards(updated)
+
+  },[cards,positionFilter,nationalityFilter, sortBy, sortOrder])
+  
+  const handleSort = (field) => {
+      console.log(sortBy)
+     if(field === sortBy){
+  
+       setSortOrder(sortOrder === "asc" ? "desc" : "asc")
+     } else {
+      setSortBy(field)
+      setSortOrder("desc")
+     }
+     
+  }
+
+
 
  const minusQuantity = (id) => {
     setCards((prev)=> {
@@ -58,8 +98,10 @@ export function CardsProvider({children}){
 
 
 
+
+
  return(
-  <CardsContext.Provider value={{cards,loading,error, minusQuantity, addQuantity, restoreBasket}}>
+  <CardsContext.Provider value={{cards,positionFilter, setPositionFilter,nationalityFilter, setNationalityFilter,filteredCards,loading,error, minusQuantity, addQuantity, restoreBasket, setSortBy, sortBy, handleSort, sortOrder}}>
     {children}
   </CardsContext.Provider>
  )

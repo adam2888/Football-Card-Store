@@ -1,7 +1,6 @@
 import { FaFutbol, FaTrophy } from "react-icons/fa";
 import { FaShirt, FaHands } from "react-icons/fa6";
 import { useCart } from "../context/CartContext";
-import { useState } from "react";
 import { useCards } from "../context/CardsContext";
 
 
@@ -11,7 +10,7 @@ import { useCards } from "../context/CardsContext";
 const Card = (card) => {
   const {addToCart} = useCart()
   const {minusQuantity} = useCards()
-
+  
   
   
 
