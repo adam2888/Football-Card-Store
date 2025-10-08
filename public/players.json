@@ -31,7 +31,7 @@
     {"id":29,"name":"Vinícius Júnior","position":"Forward","team":"Brazil","flag":"https://flagcdn.com/br.svg","overall":87,"price":179.99,"quantity":10,"appearances":180,"goals":90,"cleanSheets":0,"trophies":5},
     {"id":30,"name":"Alphonso Davies","position":"Defender","team":"Canada","flag":"https://flagcdn.com/ca.svg","overall":86,"price":169.99,"quantity":10,"appearances":150,"goals":10,"cleanSheets":60,"trophies":3},
     {"id":31,"name":"Robert Lewandowski","position":"Forward","team":"Poland","flag":"https://flagcdn.com/pl.svg","overall":91,"price":209.99,"quantity":10,"appearances":500,"goals":350,"cleanSheets":0,"trophies":12},
-    {"id":32,"name":"Mohamed Salah","position":"Forward","team":"Egypt","flag":"https://flagcdn.com/eg.svg","overall":90,"price":199.99,"quantity":0,"appearances":400,"goals":220,"cleanSheets":0,"trophies":10},
+    {"id":32,"name":"Mohamed Salah","position":"Forward","team":"Egypt","flag":"https://flagcdn.com/eg.svg","overall":96,"price":199.99,"quantity":0,"appearances":400,"goals":220,"cleanSheets":0,"trophies":10},
     {"id":33,"name":"Leroy Sané","position":"Midfielder","team":"Germany","flag":"https://flagcdn.com/de.svg","overall":86,"price":179.99,"quantity":8,"appearances":250,"goals":50,"cleanSheets":0,"trophies":5},
     {"id":34,"name":"Sadio Mané","position":"Forward","team":"Senegal","flag":"https://flagcdn.com/sn.svg","overall":88,"price":189.99,"quantity":9,"appearances":350,"goals":150,"cleanSheets":0,"trophies":8},
     {"id":35,"name":"David De Gea","position":"Goalkeeper","team":"Spain","flag":"https://flagcdn.com/es.svg","overall":87,"price":179.99,"quantity":10,"appearances":400,"goals":0,"cleanSheets":150,"trophies":7},
@@ -60,7 +60,7 @@
   "quantity": 10,
   "appearances": 320,
   "goals": 25,
-  "cleanSheets": 150,
+  "cleanSheets": 0,
   "trophies": 7
 },
   {
@@ -144,7 +144,7 @@
     "quantity": 6,
     "appearances": 500,
     "goals": 50,
-    "cleanSheets": 180,
+    "cleanSheets": 0,
     "trophies": 14
   },
   {
@@ -228,7 +228,7 @@
     "quantity": 4,
     "appearances": 593,
     "goals": 15,
-    "cleanSheets": 210,
+    "cleanSheets": 0,
     "trophies": 18
   },
   {
@@ -410,7 +410,7 @@
     "quantity": 4,
     "appearances": 600,
     "goals": 25,
-    "cleanSheets": 150,
+    "cleanSheets": 0,
     "trophies": 14
   },
   {
@@ -452,7 +452,7 @@
     "quantity": 2,
     "appearances": 450,
     "goals": 40,
-    "cleanSheets": 180,
+    "cleanSheets": 0,
     "trophies": 13
   },
   {
@@ -522,7 +522,7 @@
     "quantity": 4,
     "appearances": 500,
     "goals": 20,
-    "cleanSheets": 150,
+    "cleanSheets": 0,
     "trophies": 12
   },
   {
@@ -536,7 +536,7 @@
     "quantity": 3,
     "appearances": 600,
     "goals": 50,
-    "cleanSheets": 200,
+    "cleanSheets": 0,
     "trophies": 15
   },
   {
@@ -620,7 +620,7 @@
     "quantity": 5,
     "appearances": 400,
     "goals": 10,
-    "cleanSheets": 120,
+    "cleanSheets": 0,
     "trophies": 7
   },
   {
@@ -648,7 +648,7 @@
     "quantity": 4,
     "appearances": 400,
     "goals": 15,
-    "cleanSheets": 150,
+    "cleanSheets": 0,
     "trophies": 8
   },
   {
@@ -662,7 +662,7 @@
     "quantity": 5,
     "appearances": 550,
     "goals": 25,
-    "cleanSheets": 200,
+    "cleanSheets": 0,
     "trophies": 14
   },
   {
@@ -718,7 +718,7 @@
     "quantity": 4,
     "appearances": 600,
     "goals": 20,
-    "cleanSheets": 180,
+    "cleanSheets": 0,
     "trophies": 13
   },
   {

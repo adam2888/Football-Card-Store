@@ -11,6 +11,7 @@ export function CardsProvider({children}){
   const [positionFilter, setPositionFilter] = useState("All");
   const [nationalityFilter, setNationalityFilter] = useState("All");
   const [sortBy, setSortBy] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("")
   const [sortOrder,setSortOrder] = useState("asc")
 
 
@@ -34,28 +35,51 @@ export function CardsProvider({children}){
   },[])
 
   useEffect(() => {
-    console.log("updated")
     if(!cards.players) return;
+
+    const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const safeRegex = new RegExp(escapeRegex(searchQuery), 'i');
+
     let updated = cards.players.filter(player => (
       (positionFilter === "All" || player.position === positionFilter) &&
-      (nationalityFilter === "All" || player.team === nationalityFilter)
+      (nationalityFilter === "All" || player.team === nationalityFilter) &&
+      (searchQuery === "" || safeRegex.test(player.name))
     ))
+    
+    let sorted = [...updated]
+   
 
     if(sortBy){
+  
+      if(sortBy === "cleanSheets"){
+       
+         sorted = sorted.filter(card => card.position === "Goalkeeper")
+      }
+
+      if(sortBy === "goals"){
+       
+         sorted = sorted.filter(card => card.position !== "Goalkeeper")
+      }
+
      if(sortOrder === "asc") {
-       updated = [...updated].sort((a,b) => a[sortBy] - b[sortBy])
+       sorted = [...sorted].sort((a,b) => a[sortBy] - b[sortBy])
      } else if (sortOrder === "desc") {
-       updated = [...updated].sort((a,b) => b[sortBy] - a[sortBy])
+       sorted = [...sorted].sort((a,b) => b[sortBy] - a[sortBy])
      }
     
     }
-    setFilteredCards(updated)
+    setFilteredCards(sorted)
 
-  },[cards,positionFilter,nationalityFilter, sortBy, sortOrder])
+  },[cards,positionFilter,nationalityFilter, sortBy, sortOrder, searchQuery])
+
+
   
   const handleSort = (field) => {
-      console.log(sortBy)
-     if(field === sortBy){
+     if(field === "cleanSheets"){
+      setFilteredCards(filteredCards.filter(card => card.position === "goalkeeper"))
+     }
+    
+    if(field === sortBy){
   
        setSortOrder(sortOrder === "asc" ? "desc" : "asc")
      } else {
@@ -101,7 +125,7 @@ export function CardsProvider({children}){
 
 
  return(
-  <CardsContext.Provider value={{cards,positionFilter, setPositionFilter,nationalityFilter, setNationalityFilter,filteredCards,loading,error, minusQuantity, addQuantity, restoreBasket, setSortBy, sortBy, handleSort, sortOrder}}>
+  <CardsContext.Provider value={{cards,positionFilter, setPositionFilter,nationalityFilter, setNationalityFilter,filteredCards,loading,error, minusQuantity, addQuantity, restoreBasket, setSortBy, sortBy, handleSort, sortOrder, searchQuery, setSearchQuery}}>
     {children}
   </CardsContext.Provider>
  )

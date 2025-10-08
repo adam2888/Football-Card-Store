@@ -10,16 +10,15 @@ import { useCards } from "../context/CardsContext";
 const Card = (card) => {
   const {addToCart} = useCart()
   const {minusQuantity} = useCards()
-  
-  
-  
+
+
 
   
  
 
   return ( <>
 <div>
-<div className="relative w-56 h-80 bg-gradient-to-b from-yellow-200 via-yellow-300 to-yellow-500 rounded-2xl shadow-xl border-4 border-yellow-700 flex flex-col items-center p-2 border">
+<div className="relative w-56 h-80 bg-gradient-to-b from-yellow-200 via-yellow-300 to-yellow-500 rounded-2xl shadow-xl border-4 border-yellow-700 flex flex-col items-center p-2 border mx-auto">
   
       <div className="absolute top-2 left-2 flex flex-col items-center">
   
@@ -57,21 +56,29 @@ const Card = (card) => {
         </div>
       </div>
     </div>
-<div className="m-5">
-  <p className="w-50 font-bold text-center">£{card.player.price}</p>
-  <p className="my-2 w-50 text-center">Qty:{card.player.quantity}</p>
+<div className="m-5 w-full max-w-sm mx-auto">
+  <p className="w-full font-bold text-center">£{card.player.price}</p>
+  <p className="my-2 w-full text-center">Qty:{card.player.quantity}</p>
   {card.player.quantity > 0 ? 
-   <button onClick= {
-    () => {
-      {addToCart(card.player);
-      minusQuantity(card.player.id)}
-    }
-  } className="w-50 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Buy Now</button> :
-   <button 
-  className="w-50 bg-red-600 text-white py-2 px-4 rounded opacity-50 cursor-not-allowed" 
-  disabled>
-  Unavailable
-</button>
+   <div className="flex justify-center">
+  <button
+    onClick={() => {
+      addToCart(card.player);
+      minusQuantity(card.player.id);
+    }}
+    className="w-4/5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700"
+  >
+    Buy Now
+  </button>
+</div> :
+   <div className="flex justify-center">
+  <button
+    className="w-4/5 bg-red-600 text-white py-2 px-4 rounded opacity-50 cursor-not-allowed"
+    disabled
+  >
+    Unavailable
+  </button>
+</div>
 }
 </div>
     </div>
