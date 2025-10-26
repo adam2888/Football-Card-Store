@@ -14,7 +14,7 @@ const Filter = () => {
     const sortedUniqueNationalities = [...uniqueNationalities].sort((a,b) => (a.localeCompare(b)))
 
   return ( 
-  <div className="flex flex-col justify-between md:flex-row gap-4 items-center p-4 bg-gray-100 rounded-lg shadow-md">
+  <div className="flex flex-col justify-between md:flex-row gap-4 items-center pt-17 p-4 bg-gray-100 rounded-lg shadow-md">
   <div className="">
     <select
       value={positionFilter}

@@ -15,7 +15,8 @@ const  Header = () => {
 
 
   return (
-    <header className="bg-green-800 shadow-md p-4 flex justify-between items-center">
+<header className="bg-green-800 shadow-md p-4 flex justify-between items-center fixed top-0 left-0 w-full z-50">
+
        <h1 className="text-2xl font-bold text-white">Football Card Store</h1>
        <div className="relative">
         <button onClick={() => setShowDropDown(!showDropDown)} className="cursor-pointer">
