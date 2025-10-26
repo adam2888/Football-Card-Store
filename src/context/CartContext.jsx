@@ -3,14 +3,17 @@ import {useState,useContext,useEffect,createContext} from "react"
 
 export const CartContext = createContext()
 
-export function CartProvider ({children}) {
-  const [cart,setCart] = useState([])
+export function CartProvider({ children }) {
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem("shoppingCart");
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
 
 
+useEffect(() => {
+  localStorage.setItem("shoppingCart", JSON.stringify(cart));
+}, [cart]);
 
-
-useEffect( ()=> {
-},[cart])
 
 const addToCart = (product) => {
 setCart((prev) => {
